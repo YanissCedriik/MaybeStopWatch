@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    
+    
+    
+
+
+
+    <h1>STOPWATCH</h1>
+
+    <div class="watch" id="app">00:00:00:00</div>
+    <div id="lapTime" class="lapTime">Lap Time <li id="lastRound"></li></div>
+
+
+    <br><br><br><br><br>
+
+
+
+
+    <div class="rowCenter">
+
+        <div onclick="pauseTimer()" class="buttons"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="buttons"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                    d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9-3a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Zm4 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0V9Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div onclick="startTimer()" class="buttons"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div onclick="stopAll()"" class="buttons"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="red" viewBox="0 0 24 24">
+                <path d="M7 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Z" />
+            </svg>
+        </div>
+        <div class="buttons"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 24 24">
+                <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4" />
+            </svg>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="JS/main.js"></script>
+
+
+</body>
+
+</html>
